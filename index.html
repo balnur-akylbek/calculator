@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Groom Price Calculator</title>
+</head>
+<body>
+    <h1>Groom Price Calculator</h1>
+    <form>
+        <label for="education">Education:</label>
+        <select id="education">
+            <option></option>
+            <option value="1.5">Undergraduate degree</option>
+            <option value="1.2">College degree</option>
+            <option value="1.05">High school degree</option>
+            <option value="0.9">Middle school degree</option>
+        </select>
+        <hr>
+
+        <label for="networth">Family Net Worth:</label>
+        <select id="networth">
+            <option></option>
+            <option value="2">More than 10,000$</option>
+            <option value="1.5">Between 5,000$ and 10,000$</option>
+            <option value="1.2">Less than 5,000$</option>
+        </select>
+        <hr>
+
+        <label for="caste">Caste:</label>
+        <select id="caste">
+            <option></option>
+            <option value="100">Brahmin</option>
+            <option value="50">Kshatriya</option>
+            <option value="20">Vaishya</option>
+            <option value="10">Shudra</option>
+            <option value="-50">Varna - Untouchable</option>
+        </select>
+        <hr>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" id="music" value="10"> Plays a musical instrument<br>
+        <input type="checkbox" id="cook" value="20"> Good cook<br>
+        <input type="checkbox" id="easygoing" value="15"> Easygoing character<br>
+        <input type="checkbox" id="sings" value="10"> Sings well<br>
+        <hr>
+
+        <label>Age:</label><br>
+        <input type="radio" name="age" value="1.5" > 18-23<br>
+        <input type="radio" name="age" value="1.2"> 24-27<br>
+        <input type="radio" name="age" value="0.95"> 28+<br>
+        <hr>
+
+        <label>Reputation:</label><br>
+        <input type="checkbox" id="gossipParent" value="0.85"> Gossips about parent's attitude<br>
+        <input type="checkbox" id="gossipCharacter" value="0.9"> Gossips about character<br>
+        <input type="checkbox" id="generalGossip" value="-20"> General gossip<br>
+        <br>
+
+        <button type="button" onclick="calculatePrice()">Calculate Price</button>
+    </form>
+
+    <div class="result" id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
